@@ -11,11 +11,11 @@ import visualizerPlugin from 'rollup-plugin-visualizer'
 
 export function visualizerPluginConfig(isBuild: boolean): Undefinable<Plugin> {
   if (isBuild) {
-     return visualizerPlugin({
+    return visualizerPlugin({
       filename: './node_modules/.cache/visualizer/stats.html',
       open: true,
       gzipSize: true,
-      brotliSize: true,
+      brotliSize: true
     })
   }
 }

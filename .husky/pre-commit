@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+# Format and submit code according to lintstagedrc.js configuration
+# https://github.com/okonet/lint-staged
+npx lint-staged
+
+# https://www.npmjs.com/package/pretty-quick
+npx pretty-quick --staged

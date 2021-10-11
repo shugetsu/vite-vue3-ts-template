@@ -11,7 +11,10 @@ import { compressionPluginConfig } from './compression'
 import { pwaPluginConfig } from './pwa'
 import { visualizerPluginConfig } from './visualizer'
 
-export function vitePluginsConfig(isBuild: boolean, viteEnv: EnvConfigService<ViteEnv>): Undefinable<Plugin | Plugin[]>[] {
+export function vitePluginsConfig(
+  isBuild: boolean,
+  viteEnv: EnvConfigService<ViteEnv>
+): Undefinable<Plugin | Plugin[]>[] {
   return [
     vue(),
     vueJsx(),
