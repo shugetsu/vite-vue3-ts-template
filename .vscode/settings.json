@@ -1,0 +1,122 @@
+{
+  //===========================================
+  //============= editor ======================
+  //===========================================
+  "editor.tabSize": 2,
+  "editor.renderControlCharacters": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.detectIndentation": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.suggestSelection": "first",
+  "editor.trimAutoWhitespace": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // ===========================================
+  // ================= jsdoc ===================
+  // https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE%E5%AD%97%E6%AE%B5
+  // ===========================================
+  "fileheader.customMade": {
+    "Date": "Do not edit",
+    "LastEditTime": "Do not edit",
+    "Description": "",
+    "FilePath": "no item name"
+  },
+  "fileheader.cursorMode": {
+    "description": "",
+    "param": "",
+    "return": ""
+  },
+  "fileheader.configObj": {
+    "useWorker": true,
+    "autoAdd": false,
+    "filePathColon": "/",
+    "createHeader": false,
+    "checkFileChange": true,
+    "specialOptions": {
+      "Date": "date",
+      "LastEditTime": "lastEditTime",
+      "LastEditors": "lastAuthor",
+      "Description": "description",
+      "FilePath": "filePath"
+    },
+    "language": {
+      "ts/js": {
+        "head": "/**",
+        "middle": " * @",
+        "end": " */"
+      }
+    },
+    "colon": [" ", " "]
+  },
+  // ===========================================
+  // =============== stylelint =================
+  // https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint#optional-but-recommended-setup
+  // ===========================================
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // ===========================================
+  // ================ eslint ===================
+  // ===========================================
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+  },
+  "eslint.validate": ["javascript", "typescript", "reacttypescript", "reactjavascript", "html", "vue"],
+  // ===========================================
+  // ================ prettier ===================
+  // ===========================================
+  "prettier.requireConfig": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ===========================================
+  // ================ i18n ===================
+  // ===========================================
+  "i18n-ally.localesPaths": ["src/locales/langs"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.enabledParsers": ["json"],
+  "i18n-ally.sourceLanguage": "zh-CN",
+  "i18n-ally.enabledFrameworks": ["vue", "react"],
+  "i18n-ally.regex.usageMatch": ["[^\\w\\d]t\\(['\"`]({key})['\"`]", "[^\\w\\d]tKey\\(['\"`]({key})['\"`]"]
+}
