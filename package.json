@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.4",
+    "pinia": "^2.0.0-rc.12",
     "vue": "^3.2.16"
   },
   "devDependencies": {
