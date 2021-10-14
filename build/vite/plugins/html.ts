@@ -14,7 +14,7 @@ export function htmlPluginConfig(isBuild: boolean, viteEnv: ViteEnv): Undefinabl
     minify: isBuild,
     inject: {
       injectData: {
-        title: viteEnv.VITE_SITE_NAME
+        title: viteEnv.VITE_APP_NAME
       }
     }
   })

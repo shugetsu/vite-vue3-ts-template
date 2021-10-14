@@ -1,14 +1,26 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+  import { LanguageOptions } from '../datas/options/LanguageOptions'
+  import { useLocale } from '../hooks/locales/useLocale'
 
   defineProps<{ msg: string }>()
 
   const count = ref(0)
+  const { changeLocale } = useLocale()
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <p class="flex gap-x-2 justify-center">
+    <button
+      v-for="item in LanguageOptions"
+      class="bg-emerald-500 hover:bg-emerald-700 text-white px-2"
+      :key="item.value"
+      @click="changeLocale(item.value)"
+    >
+      {{ item.label }}
+    </button>
+  </p>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>

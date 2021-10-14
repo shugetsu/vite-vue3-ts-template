@@ -16,21 +16,17 @@ declare type ViteEnv = {
    */
   VITE_PUBLIC_PATH: string
   /**
-   * @description 站点名称
+   * @description app 名称
    */
-  VITE_SITE_NAME: string
+  VITE_APP_NAME: string
   /**
-   * @description 项目命名空间
+   * @description app 命名空间
    */
-  VITE_PROJECT_NAMESPACE: string
+  VITE_APP_NAMESPACE: string
   /**
    * @description 是否使用 pwa
    */
   VITE_IS_USE_PWA: boolean
-  /**
-   * @description pwa app 名称
-   */
-  VITE_PWA_APP_NAME: string
   /**
    * @description pwa app 简称
    */
@@ -39,4 +35,12 @@ declare type ViteEnv = {
    * @description 跨域代理
    */
   VITE_PROXY: [string, string][]
+  /**
+   * @description LocalCache 版本号
+   */
+  VITE_LOCAL_CACHE_VERSION: string
+  /**
+   * @description 日志级别
+   */
+  VITE_LOGGER_LEVEL: 'TRACE' | 'DEBUG' | 'INFO' | 'WARN' | 'ERROR' | 'SILENT'
 }
