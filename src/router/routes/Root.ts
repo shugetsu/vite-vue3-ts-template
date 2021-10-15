@@ -3,7 +3,7 @@ import { RouterRouteNameEnum } from '/@/datas/enums/RouterRouteNameEnum'
 import { RouterRoutePathEnum } from '/@/datas/enums/RouterRoutePathEnum'
 
 /**
- * 根
+ * @description 根
  */
 export const Root: RouteRecordRaw = {
   path: RouterRoutePathEnum.ROOT,

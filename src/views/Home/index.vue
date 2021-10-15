@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
   import HelloWorld from '/@/components/HelloWorld.vue'
   import { ImageResource } from '/@/datas/resources/ImageResource'
+  import { useI18n } from '/@/hooks/web/useI18n'
 
   const { t } = useI18n()
 </script>

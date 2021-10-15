@@ -1,10 +1,12 @@
 import { RouteRecordRaw } from 'vue-router'
 import { RouterRouteNameEnum } from '/@/datas/enums/RouterRouteNameEnum'
 import { RouterRoutePathEnum } from '/@/datas/enums/RouterRoutePathEnum'
-import { tKey } from '/@/utils/helpers/tKey'
+import { useI18n } from '/@/hooks/web/useI18n'
+
+const { tKey } = useI18n()
 
 /**
- * 首页
+ * @description 首页
  */
 export const Home: RouteRecordRaw = {
   path: RouterRoutePathEnum.HOME,

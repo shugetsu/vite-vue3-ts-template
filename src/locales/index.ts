@@ -1,9 +1,10 @@
-import { I18n, createI18n } from 'vue-i18n'
-import { App } from 'vue'
+import type { App } from 'vue'
+import type { I18n } from 'vue-i18n'
+import { createI18n } from 'vue-i18n'
 import { LocaleSetting } from '/@/settings/LocaleSetting'
 import { setHtmlLang } from '/@/utils/helpers/setHtmlLang'
 import { dynamicLocaleMessages } from '/@/utils/helpers/dynamicLocaleMessages'
-import { useLocale } from '/@/hooks/locales/useLocale'
+import { useLocale } from '/@/hooks/web/useLocale'
 
 /**
  * @description i18n

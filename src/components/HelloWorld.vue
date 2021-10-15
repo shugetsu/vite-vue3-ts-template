@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import { LanguageOptions } from '../datas/options/LanguageOptions'
-  import { useLocale } from '../hooks/locales/useLocale'
+  import { useLocale } from '../hooks/web/useLocale'
 
   defineProps<{ msg: string }>()
 
