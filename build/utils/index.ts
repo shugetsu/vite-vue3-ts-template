@@ -65,7 +65,7 @@ export function createEnvConfigService<T extends ViteEnv | AppEnv>(env: T): T {
   // json转对象的keys
   const jsonKeys = ['VITE_PROXY']
 
-  for (const key in Object.keys(envConfig)) {
+  for (const key in envConfig) {
     const value = env[key]
     if (boolKeys.includes(key)) {
       envConfig[key] = value === 'true' ? true : value === 'false' ? false : value
