@@ -18,6 +18,10 @@ export function pathResolve(dir = ''): string {
 export function createProxy(proxies: [string, string][]): Record<string, ProxyOptions> {
   const proxy: Record<string, ProxyOptions> = {}
 
+  if (!proxies) {
+    return proxy
+  }
+
   for (const [prefix, target] of proxies) {
     proxy[prefix] = {
       target,
