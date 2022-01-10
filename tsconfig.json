@@ -15,6 +15,7 @@
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "experimentalDecorators": true,
     "paths": {
       "/@/*": ["src/*"],
       "/%/*": ["build/*"],

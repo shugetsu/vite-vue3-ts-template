@@ -67,3 +67,8 @@ declare type Nullable<T> = T | null
  * @description 可为 undefined
  */
 declare type Undefinable<T> = T | undefined
+
+/**
+ * @description 普通方法
+ */
+declare type Fn<T = any, R = T> = (...arg: T[]) => R

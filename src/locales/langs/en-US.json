@@ -1,4 +1,20 @@
 {
+  "api": {
+    "status": {
+      "401": "The user has no authority (token, username, password is wrong)! \n[code: 401]",
+      "403": "The user is authorized, but access is forbidden! \n[code: 403]",
+      "404": "Network request error! \n[code: 404]",
+      "405": "Network request error, request method is not allowed! \n[code: 405]",
+      "408": "Network request timed out! \n[code: 408]",
+      "500": "Server error, please contact the administrator! \n[code: 500]",
+      "501": "The network is not implemented! \n[code: 501]",
+      "502": "Network Error! \n[code: 502]",
+      "503": "The service is unavailable, the server is temporarily overloaded or maintained! \n[code: 503]",
+      "504": "Network timeout! \n[code: 504]",
+      "505": "The http version does not support the request! \n[code: 505]",
+      "999": "Unknown mistake! \n[code: 999]"
+    }
+  },
   "helloWord": "Hello Vue 3 + TypeScript + Vite",
   "home": "home"
 }
