@@ -1,10 +1,11 @@
+import type { Ref } from 'vue'
 import { onBeforeUpdate, ref } from 'vue'
 
 /**
  * @description refs
  */
 export function useRefs() {
-  const refs = ref<HTMLElement[]>([])
+  const refs = ref([]) as Ref<HTMLElement[]>
 
   onBeforeUpdate(() => (refs.value = []))
 
