@@ -57,5 +57,3 @@ export function useContext<T>(options: CreateContextOptions = {}) {
 
   return [provider, useInject] as UseContextReturn<T>
 }
-
-const [a, b] = useContext()
