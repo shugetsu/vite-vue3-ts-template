@@ -1,14 +1,12 @@
 /**
  * @date 2021-10-11 19:05:27
- * @lastEditTime 2021-10-11 19:18:14
+ * @lastEditTime 2022-01-14 15:12:41
  * @description eslint 配置
  * @filePath /.eslintrc.js
  * @see https://eslint.org/docs/user-guide/configuring
  */
 
-const { defineConfig } = require('eslint-define-config')
-
-module.exports = defineConfig({
+module.exports = {
   root: true,
   env: {
     browser: true,
@@ -95,4 +93,4 @@ module.exports = defineConfig({
       }
     ]
   }
-})
+}
