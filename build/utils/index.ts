@@ -86,3 +86,11 @@ export function createEnvConfigService<T extends ViteEnv | AppEnv>(env: T): T {
 
   return envConfig
 }
+
+/**
+ * @description 是否生成包预览
+ * @return {boolean}
+ */
+export function isReportMode(): boolean {
+  return process.env.REPORT === 'true'
+}

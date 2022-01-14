@@ -21,6 +21,6 @@ export function vitePluginsConfig(isBuild: boolean, viteEnv: ViteEnv): Undefinab
     htmlPluginConfig(isBuild, viteEnv),
     svgIconsPluginConfig(isBuild),
     pwaPluginConfig(viteEnv),
-    visualizerPluginConfig(isBuild)
+    visualizerPluginConfig()
   ]
 }
