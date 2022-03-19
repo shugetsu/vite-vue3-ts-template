@@ -1,5 +1,4 @@
 import type { App } from 'vue'
-import type { I18n } from 'vue-i18n'
 import { createI18n } from 'vue-i18n'
 import { LocaleSetting } from '/@/settings/LocaleSetting'
 import { setHtmlLang } from '/@/utils/helpers/setHtmlLang'
@@ -37,6 +36,6 @@ export async function setupI18n(app: App): Promise<void> {
       [locale.value]: messages
     }
   }
-  i18n = createI18n(options) as I18n
+  i18n = createI18n(options)
   app.use(i18n)
 }
